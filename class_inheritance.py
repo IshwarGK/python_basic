@@ -19,24 +19,24 @@ class Child1(Parent):
 
 class A:
     def __init__(self) -> None:
-        print("In Parent")
+        print("In A")
 
 class B(A):
     def __init__(self) -> None:
         super().__init__()
-        print("In Parent")
+        print("In B")
 
 class C(A):
     def __init__(self) -> None:
         super().__init__()
-        print("In Parent")
+        print("In C")
 
 class D(B, C):
     def __init__(self) -> None:
         super().__init__()
-        print("In Parent")
+        print("In D")
 
 if __name__ == "__main__":
     c_obj1 = Child1()
-    #c_obj2 = D()
+    c_obj2 = D()
     
